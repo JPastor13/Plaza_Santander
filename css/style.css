@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+span img{
+    width: 150px;
+ }
+
+
+ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 10px;
+
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ figure img{
+    width: 1688px;
+ }
+

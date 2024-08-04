@@ -1,40 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plaza Santander</title>
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <header>
-        <span><img src="./img/logo.png" alt=""></span>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Tiendas</li>
-                <li>Entretenimiento</li>
-                <li>Promociones</li>
-                <li>Servicios</li>
-                <li>Eventos</li>
-                <li>Conctactenos</li>
+    <title>PLAZA SANTANDER</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <!--<a class="navbar-brand" href="#">Plaza Santander</a>-->
+          <img src="./imagenes/logo.png" class="logo1" alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">TIENDAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ENTRETENIMIENTO</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PROMOCIONES
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">EVENTOS</a>
+              </li>
             </ul>
-        </nav>
-    </header>
-     <section>
-        <figure>
-            <img src="./img/portada.png" alt="">
-        </figure>
-     </section>
-     <section>
-        <div>
-            <h1>Eventos</h1>
-            <img src="./img/evento1.jpg" alt="">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-        <div>
-            <h1>Servicios</h1>
-            <img src="./img/servicio1.jpg" alt="">
+      </nav>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active c-item" data-bs-interval="10000">
+            <img src="./imagenes/1.png" class="d-block w-100 c-img" alt="1">
+          </div>
+          <div class="carousel-item c-item" data-bs-interval="10000">
+            <img src="./imagenes/2.png" class="d-block w-100 c-img" alt="2">
+          </div>
+          <div class="carousel-item c-item" data-bs-interval="10000">
+            <img src="./imagenes/3.png" class="d-block w-100 c-img" alt="3">
+          </div>
+          <div class="carousel-item c-item" data-bs-interval="10000">
+            <img src="./imagenes/4.png" class="d-block w-100 c-img" alt="4">
+          </div>
         </div>
-     </section>
-</body>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section>
+        <div class="lineas">
+            <h1 class="texto">AHORA MISMO EN PLAZA SANTANDER</h1>
+            </div>
+            <div class="lineas2"></div>  
+      </section>
+      <div class="contenedor">
+        <img src="./imagenes/evento1.jpg"   alt="primer evento">
+        <img src="./imagenes/servicio1.jpg" alt="segundo evento">
+    </div >
+    <section>
+        <div class="lineas3">
+            <h1 class="texto1">NUESTRAS TIENDAS</h1>
+            </div>
+            <div class="lineas4"></div>  
+      </section>
+    <main>
+        <div class="caja">MR. PAPAS
+            <img src="./imagenes/mrpapas 1.png" alt="">
+        </div>
+        <div class="caja">RAFFO’S GRILL
+            <img src="./imagenes/raffos 1.png" alt="">
+        </div>
+        <div class="caja">RINCÓN FRANCÉS
+            <img src="./imagenes/rinconfrances 1.png" alt="">
+        </div>
+        <div class="caja">DON FRANCISCO
+            <img src="./imagenes/Logo 1.png" alt="">
+        </div>
+        <div class="caja">DELY’S
+            <img src="./imagenes/WhatsApp Image 2024-04-18 at 12.51.14 (1) 1.png" alt="">
+        </div>
+        <div class="caja">JUAN 3.16 CAFÉ
+            <img src="./imagenes/uan 3.16 1.png" alt="">
+        </div>
+        <div class="caja">SUSHI TOP
+            <img src="./imagenes/Logo 2.png" alt="">
+        </div>
+        <div class="caja">ECONOVISION
+            <img src="./imagenes/Logo 3.png" alt="">
+        </div> 
+        <div class="w-33">
+            <button name="boton"> Nuestras Tiendas </button>
+
+        </div>
+ 
+    </main>
+    <footer>
+        <div class="seccion">CONTACTO
+            <img src="./imagenes/WHAT.png" alt="icono">
+            <h5>Dirección: Jr. Manuel Villavicencio 472</h5>
+            <h5>Chimbote, Perú</h5>
+            <h5>Correo: info@plazasantander.com.pe</h5>
+            <button>
+                CÓMO LLEGAR
+              </button>
+        </div>
+        <div class="seccion">HORARIO
+        <h5>Lunes a Domingo</h5>
+        <h5>10:00 am - 10:00 pm</h5>
+        <br>
+
+    </div>
+        <div class="seccion">SIGUENOS
+            <br>
+            <img src="./imagenes/t-removebg-preview 1.png" alt="">
+            <img src="./imagenes/f-removebg-preview 1.png" alt="">
+            <img src="./imagenes/i-removebg-preview 1.png" alt="">
+            <img src="./imagenes/y-removebg-preview 1.png" alt="">
+            <br>
+            <br>
+        </div>
+    </footer>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js";
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
+
+  </body>
 </html>

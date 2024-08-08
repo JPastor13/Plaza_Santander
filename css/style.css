@@ -1,37 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
-}
-
-
-header{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-span img{
-    width: 150px;
- }
-
-
-ul{
-    display: flex;
-}
-
-nav ul li{
+    box-sizing: border-box;
+    text-decoration: none;
     list-style: none;
-    margin-right: 10px;
-
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    
 }
 
-section{
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #FFFFFF;
+    /*display: flex;*/
+    align-items: center;
+    min-height: 70vh;
+    padding: 100px 0;
+}
+
+
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:#1E1E1E;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color:#333128;
+    display: block;
+    font-weight: 600;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    display: flex;
+    width:100%;
+    height:400PX;
+    background-image: url("../img/portada.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+}
+
+.header-txt{
+    flex-basis: 50%;
+}
+
+.header-txt h1{
+    font-size: 55px;
+    line-height: 1;
+    color:#333128;
+    margin-bottom: 25px;
+}
+
+p{
+    font-size:16px;
+    color: #181713;
+    margin-bottom: 45px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 25px;
+    color: #FFFFFF;
+    border-radius:25px;
+    background-color:#BA1FB5;
+    text-transform: capitalize;
+}
+
+.header-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.header-img img{
+    width: 400px;
+}
+
+
+.information{
+    width: 70%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    padding: 17px 75px;
+    margin-top: -200px;
+    background-color: #c5c3c3;
+    opacity: 0.5;
+}
+
+.information-content{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    opacity: 1;
+    
+}
+
+.information-1 img{
+    width: 35px;
+}
+.information-2 img{
+    width: 35px;
+}
+
+.information-3 img{
+    width: 35px;
+}
+.information-4 img{
+    width: 35px;
+}
+.information-5 img{
+    width: 35px;
+}
+
+h3{
+    font-size: 17px;
+    color:#181713;
+    text-transform: capitalize;
+}
+
+.information-1 p{
+    margin-bottom: 0;
+}
+
+
+.oferts{
+    padding: 0 0 100px 0;
+    text-align:center;
+}
+
+.oferts h2{
+    font-size: 40px;
+    color: #181713;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+}
+.oferts-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px
+}
+
+.oferts-1 img{
+    width: 350px;
+    height: 330px;
+    margin-bottom: 10px;
+}
+
+
+.stores{
+    padding: 0 0 100px 0;
+    text-align: center;
+}
+
+.stores h2{
+    font-size: 40px;
+    color: #181713;
+    text-transform: capitalize;
+    margin-bottom: 55px;
+}
+
+.stores-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px
+}
+
+.stores{
+    text-align: center;
+    box-shadow: 0 0 20px  rgba(0,0,0,0.1);
+    padding: 35px;
+}
+
+.stores img{
+    width: 150px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.stores h3{
+    color: #BA1FB5;
+}
+
+
+
+.btn-2{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 25px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    background-color: #BA1FB5;
+}
+
+.stands{
+    padding-bottom: 100px;
     display: flex;
     justify-content: space-between;
 }
 
+.stands-1{
+    flex-basis: 30%;
+    padding: 25px;
+    background-color: #FAF2DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
- figure img{
-    width: 1688px;
- }
+.stand{
+    width: 300px;
+    height: 250px;
+}
 
+.service-2{
+    flex-basis: 40%;
+    padding: 25px;
+    background-color: #DDFACC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-3{
+    flex-basis: 30%;
+    padding: 25px;
+    background-color: #FDE5FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+}
+
+input{
+    padding: 17px 35px;
+    border-radius: 25px;
+}
+
+.btn-3{
+    margin-left: 10px;
+    color:#FFFFFF;
+    background-color: #BA1FB5;
+}
+
+.footer{
+    padding: 50px 0;
+    background-color: #BA1FB5;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    color:#FFFFFF;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.link a{
+    color:#F3F3F3;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link a:hover{
+    color:#FFFFFF
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left:0;
+        right: 0;
+        background-color: #303030;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    .menu .navbar ul li a{
+        color:#FFFFFF;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+
+    .header{
+        min-height: 0vh;
+        padding: 100px 30px;
+    }
+
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt{
+        margin-bottom: 20px;
+    }
+
+    .header-img img{
+        width: 300px;
+    }
+
+
+    .information{
+        display: none;
+    }
+
+    .oferts{
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .oferts-1{
+        margin-bottom: 25px;
+    }
+
+    .stores{
+        padding: 30px;
+    }
+
+    .stores-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .stands{
+        flex-direction: column;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

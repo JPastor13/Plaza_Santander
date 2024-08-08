@@ -3,38 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plaza Santander</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <span><img src="./img/logo.png" alt=""></span>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Tiendas</li>
-                <li>Entretenimiento</li>
-                <li>Promociones</li>
-                <li>Servicios</li>
-                <li>Eventos</li>
-                <li>Conctactenos</li>
-            </ul>
-        </nav>
-    </header>
-     <section>
-        <figure>
-            <img src="./img/portada.png" alt="">
-        </figure>
-     </section>
-     <section>
-        <div>
-            <h1>Eventos</h1>
-            <img src="./img/evento1.jpg" alt="">
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Plaza Santander</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img SRC ="images/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Tiendas</a></li>
+                    <li><a href="#">Entretenimiento</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Eventos</a></li>
+                </ul>
+            </nav>
         </div>
-        <div>
-            <h1>Servicios</h1>
-            <img src="./img/servicio1.jpg" alt="">
+       <div class="header-content container">
+        <div class="header-txt">
+            <h1>Bienvenidos</h1>
+            <p>
+               Todo en un solo lugar
+            </p>
         </div>
-     </section>
+        <div class="header-img">
+          <img src="images/rigth.png" alt="">
+        </div>
+       </div> 
+    </header> 
+    <section class="information container">
+        <div class="information-content">
+            <div class="information-1">
+                <img src="img/tiendas.png" alt="">
+                <h3>Tiendas</h3>
+            </div>
+            <div class="information-2">
+                <img src="img/promociones.png" alt="">
+                <h3>Promociones</h3>
+            </div>
+            <div class="information-3">
+                <img src="img/eventos.png" alt="">
+                <h3>Eventos</h3>
+            </div>
+            <div class="information-4">
+              <img src="img/directorio.png" alt="">
+              <h3>Conctacto</h3>
+          </div>
+          <div class="information-5">
+            <img src="img/ubicacion.png" alt="">
+            <h3>Ubicación</h3>
+        </div>
+        </div>
+    </section>
+    <section class="oferts container">
+      <h2>Ahora mismo en Plaza Santander</h2>
+      <div class="oferts-content">
+        <div class="oferts-1">
+          <img src="img/evento1.jpg">
+          <h3>Ver</h3>
+      </div>
+      <div class="oferts-1">
+          <img src="img/servicio1.jpg">
+          <h3>Ver</h3>
+      </div>
+      </div> 
+    </section>
+    <main class="stores container" id="lista-1">
+        <h2>NUESTRAS TIENDAS</h2>
+        <div class="stores-content">
+            <div class="stores">
+                <img src="img/logo_delys.png" alt="">
+                <div class="stores-txt">
+                    <h3>DELY'S</h3>
+                </div>
+            </div>
+            <div class="stores">
+                <img src="img/logo_donfrancisco.png" alt="">
+                <div class="stores-txt">
+                    <h3>DON FRANCISCO</h3>
+                </div>
+            </div>
+            <div class="stores">
+                <img src="img/logo_econovision.png" alt="">
+                <div class="stores-txt">
+                    <h3>ECONOVISION</h3>
+                </div>
+            </div>
+            <div class="stores">
+                <img src="img/logo_heladeria.png" alt="">
+                <div class="stores-txt">
+                    <h3>CREMOSITO</h3>
+                </div>
+            </div>
+            <div class="stores">
+                <img src="img/logo_mrpapas.jpg" alt="">
+                <div class="stores-txt">
+                    <h3>MR. PAPAS</h3>
+                </div>
+            </div>
+            <div class="stores">
+                <img src="img/logo_raffos.jpg" alt="">
+                <div class="stores-txt">
+                    <h3>RAFFO'S</h3>
+                </div>
+            </div>
+            <div class="stores">
+                <img src="IMG/logo_sushitop.png" alt="">
+                <div class="stores-txt">
+                    <h3>SUSHI TOP</h3>
+                </div>
+            </div>
+            <div class="stores">
+                <img src="img/logo_delys.png" alt="">
+                <div class="stores-txt">
+                    <h3>DELY'S</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="stands">
+        <div class="stands-1">
+            <img class="stand" src = "img/pizza.jpeg">
+        </div>
+        <div class="stands-2">
+            <img class="stand" src = "img/parrilla.jpeg">
+        </div>
+        <div class="stands-3">
+            <img class="stand" src = "img/helados.jpeg">
+        </div>
+    </section>
+    <section class="contact container">
+        <form>
+            <input type="email" placeholder="Correo">
+            <input type="submit" class="btn-3">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Loren</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Loren</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Loren</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>Loren</h3>
+                <ul>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
